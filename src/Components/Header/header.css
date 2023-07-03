@@ -1,0 +1,32 @@
+nav li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.link {
+  color: #FFC87C;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #7DB3FF;;
+}
+  
+.size {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: white;
+}
+
+.logoLink:hover {
+  text-decoration: none;
+  color: white;
+}
+

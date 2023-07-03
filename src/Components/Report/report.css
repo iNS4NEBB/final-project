@@ -1,0 +1,173 @@
+.formPublic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  padding: 30px;
+  width: 450px;
+  border-radius: 10px;
+  transform: scale(0.9);
+}
+
+.report {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 100px;
+  padding-bottom: 70px;
+}
+
+.report img {
+  max-width: 100%;
+}
+
+.formPublic input {
+  margin: 10px;
+  width: 280px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.formPublic select {
+  border: none;
+  margin: 10px;
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.formPublic label {
+  text-align: center;
+  color: #7DB3FF;
+}
+
+.formPublic h2 {
+  color: #FFC87C;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.formPublic button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #7DB3FF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.modalForm {
+  background-color: rgba(25, 26, 25, 0.9);
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  height: 96.5%;
+  top: 0;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 40px rgba(215, 248, 227, 0.76);
+}
+
+.modalForm h2 {
+  color: #FFC87C;
+  text-align: center;
+}
+
+.modalForm label {
+  color: #7DB3FF;
+  text-align: center;
+}
+
+.modalSubContainer {
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modalSubContainer div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modalForm span {
+  color: #FFC87C;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.modalForm input,
+.modalForm select {
+  border: none;
+  margin: 10px;
+  min-width: 30vw;
+  text-align: center;
+  border-radius: 5px;
+  height: 26px;
+  background-color: darkgray;
+}
+
+.modalForm button {
+  border: none;
+  background-color: #FFC87C;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+  align-self: center;
+}
+
+input:invalid,
+select:invalid {
+  background-color: darkgray;
+  border: none;
+  outline: 2px solid #FFC87C;
+  border-radius: 5px;
+}
+
+.reportAccept {
+  color: chartreuse
+}
+
+@media screen and (max-width: 500px) {
+  .formPublic {
+    width: 350px;
+  }
+
+  .formPublic input {
+    width: 250px;
+  }
+
+  .formPublic select {
+    width: 250px;
+  }
+}
+
+@media screen and (max-height: 730px) {
+  .modalSubContainer {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .modalForm span {
+    top: 13px;
+    right: 23px;
+  }
+}
